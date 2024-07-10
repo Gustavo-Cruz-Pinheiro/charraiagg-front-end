@@ -151,7 +151,7 @@ form select {
 }
 
 .fixed-info {
-    height: 100px;
+    height: 130px;
     width: 40%;
     background-color: #00000079;
     color: white;
@@ -188,9 +188,9 @@ form select {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 932px) {
     .fixed-info {
-        height: 140px;
+        height: 150px;
         width: 55%;
     }
 
@@ -228,5 +228,18 @@ form select {
     .fixed-info {
         height: 160px;
         width: 60%;
+    }
+
+    .footer {
+        z-index: 999;
+        position: absolute;
+    }
+
+    @media screen and (max-width: 400px) {
+        .fixed-info {
+            height: 130px;
+            width: 50%;
+            font-size: 8pt;
+        }    
     }
 }
