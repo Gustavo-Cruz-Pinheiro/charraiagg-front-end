@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         // Busca os itens do servidor
-        const response = await fetch('https://charraiagg-back-end.vercel.app/api/itens/');
+        const response = await fetch('https://charraiagg-back-end.onrender.com/api/itens/');
         if (!response.ok) {
             throw new Error('Erro ao buscar itens');
         }
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 try {
                     // Envia requisição PUT para modificar o patrocinador do item selecionado
-                    const putResponse = await fetch(`https://charraiagg-back-end.vercel.app/api/itens/${encodeURIComponent(itens[selectedIndex].nome)}`, {
+                    const putResponse = await fetch(`https://charraiagg-back-end.onrender.com/api/itens/${encodeURIComponent(itens[selectedIndex].nome)}`, {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json',
