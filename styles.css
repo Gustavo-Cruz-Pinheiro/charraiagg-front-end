@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background-color: rgb(255, 255, 255);   
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 1rem 0;
@@ -56,7 +56,7 @@ body {
     outline: none;
     border: none;
     box-shadow: none;
-  }
+}
 
 .search-icon {
     position: absolute;
@@ -126,6 +126,8 @@ body {
     text-align: center;
     padding: 1rem 0;
     margin-top: 250px;
+    z-index: 999;
+    position: absolute;
 }
 
 .footer p {
@@ -242,7 +244,7 @@ form select {
         width: 70%;
         height: 80%;
     }
-    
+
     .container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -252,20 +254,15 @@ form select {
         height: 400px;
         width: 95%;
     }
-    
+
     .card-img {
         height: 270px;
         width: 100%;
     }
-    
+
     .fixed-info {
         height: 160px;
         width: 60%;
-    }
-
-    .footer {
-        z-index: 999;
-        position: absolute;
     }
 
     @media screen and (max-width: 400px) {
@@ -273,6 +270,6 @@ form select {
             height: 130px;
             width: 50%;
             font-size: 8pt;
-        }    
+        }
     }
 }
