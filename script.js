@@ -39,8 +39,6 @@ function createCard(item) {
 document.addEventListener('DOMContentLoaded', async () => {
     const loadingIndicator = document.getElementById('loading');
     const container = document.getElementById('itens-container');
-    const searchBar = document.getElementById('search-bar');
-    loadingIndicator.style.display = 'block'; // Exibe o indicador de carregamento
 
     try {
         // Busca os itens do servidor
@@ -77,6 +75,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                         alert('Erro ao copiar telefone. Verifique as permissões do navegador.');
                     });
             });
+
+            const searchBar = document.getElementById('search-bar');
+            loadingIndicator.style.display = 'block'; // Exibe o indicador de carregamento
         }
 
         const itemSelect = document.getElementById('item-select');
