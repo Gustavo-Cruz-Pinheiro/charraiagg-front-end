@@ -11,8 +11,20 @@
     <img src="./assets/Logo.png">
     <!-- <h1>Itens da Charráia</h1> -->
   </header>
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Buscar item..." class="search-bar">
+    <i class="fas fa-search search-icon"></i>
+  </div>
   <div class="container" id="itens-container">
     <!-- Cards serão inseridos aqui -->
+    <div id="loading" style="
+      display: flex;
+      font-size: 24pt;
+      height: 1000px;
+      background-color: aliceblue;"
+    >
+      Carregando...
+    </div>
   </div>
   <footer class="footer">
     <p>Criado pelo &copy; Gustavo Todos os direitos reservados</p>

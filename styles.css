@@ -4,7 +4,7 @@ body {
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #e0e0e0; */
+
     height: 100vh;
     background-image: url('./assets/bg-dark.png');
     background-repeat: repeat;
@@ -31,6 +31,39 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 1rem;
+}
+
+.search-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 10px 40px 10px 10px;
+}
+
+.search-bar {
+    border: 0px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
 }
 
 .card {
@@ -92,7 +125,7 @@ body {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: 250px;
 }
 
 .footer p {
@@ -168,9 +201,9 @@ form select {
     color: #fff;
     border: none;
     cursor: pointer;
-    /* padding: 8px 12px; */
-    /* border-radius: 4px; */
-    /* margin-left: 10px; */
+
+
+
 }
 
 .fixed-info button i {
