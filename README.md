@@ -10,7 +10,7 @@ O objetivo do projeto foi desenvolver o font-end de um site para itens da lista 
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-* JavaScrip;
+* JavaScript;
 * HTML;
 * CSS; e
 * VSCode.
